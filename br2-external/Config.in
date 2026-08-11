@@ -1,0 +1,3 @@
+source "$BR2_EXTERNAL_FOOBAR_PATH/package/bar/Config.in"
+source "$BR2_EXTERNAL_FOOBAR_PATH/package/libfoo/Config.in"
+source "$BR2_EXTERNAL_FOOBAR_PATH/package/myapp/Config.in"
