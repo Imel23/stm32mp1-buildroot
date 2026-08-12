@@ -1,0 +1,24 @@
+From eb6de9149bf3455c90db18141e8ac5f09a413063 Mon Sep 17 00:00:00 2001
+From: Imel23 <40009897+Imel23@users.noreply.github.com>
+Date: Tue, 11 Aug 2026 01:43:56 +0200
+Subject: [PATCH] Fix missing <libconfig.h> include
+
+---
+ src/main.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/main.c b/src/main.c
+index 5c97bbe..37e9f00 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -4,6 +4,7 @@
+ #include "foo.h"
+ 
+ #if defined(USE_LIBCONFIG)
++#include <libconfig.h>
+ 
+ void load_config(int *verbose)
+ {
+-- 
+2.34.1
+
