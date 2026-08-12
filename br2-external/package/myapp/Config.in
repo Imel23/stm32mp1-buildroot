@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MYAPP
+    bool "myapp"
+    select BR2_PACKAGE_MYAPP
+    help
+        A completely stupid and useless application
+
